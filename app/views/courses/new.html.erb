@@ -1,0 +1,27 @@
+<% provide(:title, 'Create a new course') %>
+<h1>Create a new course</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@course) do |f| %>
+      <%= render 'shared/error_messages_course' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+      
+      <%= f.label :prerequisite %>
+      <%= f.text_field :prerequisite, class: 'form-control' %>
+
+      <%= f.label :category %>
+      <%= f.text_field :category, class: 'form-control' %>
+
+      <%= f.label :location %>
+      <%= f.text_field :location, class: 'form-control' %>
+
+      <%= f.label :coordinator%>
+      <%= f.text_field :coordinator, class: 'form-control' %>
+
+      <%= f.submit "Create new course", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

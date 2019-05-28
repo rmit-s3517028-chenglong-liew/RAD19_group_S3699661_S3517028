@@ -1,0 +1,41 @@
+<% provide(:title, "Home") %>
+<div class="center jumbotron">
+  <h1>Welcome to the Your Course App</h1>
+
+  <h2>
+    This is the home page for the RAD Assignment 
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-danger" %>
+  
+</div>
+
+<div class="container">
+    
+    <div class="row">
+          <div class="greenbuttons col-md-3">
+            <h2>View Course as Guest User</h2>
+            <p>Browse and view courses as a guest user and sign up later</p>
+            <p>  <%= link_to "Browse all courses", courses_path, class: "btn btn-md btn-success" %></p>
+          </div>
+          
+           <% if logged_in? %>
+         <div class="greenbuttons col-md-3">
+            <h2>Sign in to your account</h2>
+            <p>Update your courses, rate courses, view coordinator information</p>
+            <p><%= link_to "You are already logged in", current_user, class: "btn btn-md btn-success" %></p>
+          </div>
+        <% else %>
+         <div class="greenbuttons col-md-3">
+            <h2>Sign in to your account</h2>
+            <p>Update your courses, rate courses, view coordinator information</p>
+            <p><%= link_to "Log in to your account", login_path, class: "btn btn-md btn-success" %></p>
+          </div>
+        <% end %>
+          
+          
+          
+          
+          
+        </div>
+    

@@ -1,0 +1,27 @@
+<%= @category.name.upcase %>
+
+  <% @courses.each do |course| %>
+  
+  <ul>
+    <li><h3><%= link_to course.name, course %></h3></li>
+      <li>Prerequisite : <%= course.prerequisite %></li>
+      <li>Category : <%= link_to course.category %></li>
+      <li>Location : <%= link_to course.location %></li>
+      <li>Created : <%= course.created_at %></li>
+      <ul>
+       
+        <% if category.name.upcase == course.category.upcase %>
+     <div class="jumbotron">
+  <ul class="courses">
+    <li><h3><%= link_to course.name, course %></h3></li>
+      <li>Prerequisite : <%= course.prerequisite %></li>
+      <li>Category : <%= link_to course.category %></li>
+      <li>Location : <%= link_to course.location %></li>
+      <li>Created : <%= course.created_at %></li>
+      <ul>
+        </div>
+      
+        <% end %>
+  <% end %>
+
+  

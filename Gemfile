@@ -35,6 +35,8 @@ gem'carrierwave'
 gem"mini_magick"
 gem"font-awesome-rails"
 
+gem 'rails-controller-testing'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -1,0 +1,25 @@
+<% provide(:title, 'All Courses') %>
+<h1>All courses</h1>
+
+<ul class="nav nav-tabs">
+              <li class="active"><%= link_to "Courses", courses_path %></li>
+              <li><%= link_to "Coordinator", users_path %></li>
+</ul>
+
+
+  <% @courses.each do |course| %>
+  <div class="jumbotron">
+  <ul class="courses">
+    <li><h3><%= link_to course.name, course %></h3></li>
+      <li>Prerequisite : <%= course.prerequisite %></li>
+      <li>Category : <%= link_to course.category %></li>
+      <li>Location : <%= link_to course.location %></li>
+      <li>Created : <%= course.created_at %></li>
+      <ul>
+         <li><%= image_tag("asd.png", height: '30', width: '30') %> : 1 <%= image_tag("asd - Copy.png", height: '30', width: '30') %> : 1 </li>
+        </div>
+  <% end %>
+  
+  
+  
+

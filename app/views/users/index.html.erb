@@ -1,0 +1,17 @@
+<% provide(:title, 'All Coordinator') %>
+<h1>All Coordinators</h1>
+
+<ul class="nav nav-tabs">
+              <li><%= link_to "Courses", courses_path %></li>
+              <li class="active"><%= link_to "Coordinator", users_path %></li>
+</ul>
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= gravatar_for user, size: 50 %>
+      <%= link_to user.name, user %>
+    </li>
+  <% end %>
+</ul>
+
