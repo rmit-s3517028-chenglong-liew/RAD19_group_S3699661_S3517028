@@ -21,18 +21,17 @@ Papisadsad	papisadsad@gmail.com		RAD assignment			No	28/5/2019	14:58:41	28/5/201
 Time sheet of Cheng Long Liew :
 
 User	Email	Client	Project	Task	Description	Billable	Start date	Start time	End date	End time	Duration
-
 Chenglongliew	chenglongliew@gmail.com		RAD assignment      NNo	17/5/2019	13:26:01	17/5/2019	13:43:20	0:17:19
-
 Chenglongliew	chenglongliew@gmail.com		RAD assignment      No	20/05/2019	17:36:55	20/05/2019	7:57:11	14:20:16	
-
 Chenglongliew	chenglongliew@gmail.com		RAD assignment      No	26/05/2019	17:36:55	27/05/2019	7:57:11	14:20:16		
-
 
 Heroku Deployment URL:
 https://git.heroku.com/your-course-app-v1.git
 
 Last Heroku Deployment Log:
+
+
+
 2019-05-28T13:09:55.965627+00:00 app[web.1]:                 FROM pg_attribute a
 2019-05-28T13:09:55.965628+00:00 app[web.1]:                 LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
 2019-05-28T13:09:55.965630+00:00 app[web.1]:                 LEFT JOIN pg_type t ON a.atttypid = t.oid
